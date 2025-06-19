@@ -132,8 +132,8 @@
                 const properties = post.properties;
                 
                 // Extraer datos
-                const nombre = properties.Nombre.title[0]?.plain_text || "Sin título";
-                const fecha = properties["Fecha de publicacion"].date?.start || "Sin fecha";
+                const nombre = properties.Nombre.title[0]?.plain_text || "Nombre";
+                const fecha = properties["Fecha de publicacion"].date?.start || "Fecha";
                 const imagen = properties.Archivo.files[0]?.file?.url || "";
                 
                 // Formatear fecha
